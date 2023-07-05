@@ -18,7 +18,7 @@ function Main() {
                             <div className="cardtext">
                                 <p>{`Bu web saytdan foydalanish uchun quyidagi ${cards.name} dan ro'yhatdan o'ting.`}</p>
                             </div>
-                            <div className="">
+                            <div className="buttonsmain">
                                 <button className='btn'>{cards.kirish}</button>
                                 <button>{cards.button}</button>
                             </div>

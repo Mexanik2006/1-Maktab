@@ -29,6 +29,7 @@ function Footer() {
                     </a>
                 </div>
             </div>
+
             <div className="footerbottom">
                 <div className="footerleft">
                     <div className="lefttitle">
@@ -41,7 +42,7 @@ function Footer() {
                 </div>
 
                 <div className="footercenter">
-                    <div className="centertitle">
+                    <div className="footertitlee">
                         <h3 style={{ marginLeft: "-20px" }}>Bizning sahifalarimmiz:</h3>
                     </div>
                     <div className="centerlink">
@@ -63,7 +64,9 @@ function Footer() {
                 </div>
 
                 <div className="footerrightl">
-                    <h3>Bizning manzilimmiz:</h3>
+                    <div className="footertitlee">
+                        <h3>Bizning manzilimmiz:</h3>
+                    </div>
                     <div className="location">
                         <ul>
                             <li><IoIosHome /> Yangiqo'rg'on tumani Toskent ko'cha 4-uy.</li>
@@ -76,6 +79,10 @@ function Footer() {
                 <div className="footerright">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1501.1671242049713!2d71.72144298858919!3d41.19268588603301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38a4b1bd71e9bdd7%3A0xaa0f5121af27b00c!2z0KjQutC-0LvQsCDihJYx!5e0!3m2!1suz!2s!4v1688557952091!5m2!1suz!2s" width="300" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+            </div>
+
+            <div className="corpiriter">
+                <p>ccccccccccccccccccccccccccccc</p>
             </div>
         </div>
     )

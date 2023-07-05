@@ -63,3 +63,24 @@
     background: none;
     color: #161616;
 }
+
+@media (max-width: 450px) {
+    .Main {
+        width: 100%;
+    }
+    .maincard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .card:nth-child(1) {
+        margin-top: -20px;
+    }
+    .buttonsmain {
+        display: flex;
+    }
+}
