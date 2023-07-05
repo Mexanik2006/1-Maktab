@@ -1,5 +1,5 @@
 .Footer {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     color: #dcdcdc;
     background-color: #231f20;
@@ -43,7 +43,7 @@
     margin-left: 20px;
 }
 .lefttitletext p {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 200px;
     margin-top: 20px;
 }
@@ -63,4 +63,14 @@
 
 .centerlink a:hover li {
     list-style: square;
+}
+
+.location {
+    /* border: 1px solid red */
+    margin-top: 30px;
+}
+.location ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
