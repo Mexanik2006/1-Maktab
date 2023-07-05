@@ -1,0 +1,36 @@
+.Navbar {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 76px;
+    background-color: darkgray;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links {
+    /* border: 1px solid red; */
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+.links ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.links a {
+    text-decoration: none;
+    color: #161616;
+    transition: list-style 0.5s;
+    font-weight: 550;
+}
+.links a:hover {
+    color: #404040;
+    font-weight: 800;
+}
+
+.links a:hover li {
+    list-style: square;
+}
