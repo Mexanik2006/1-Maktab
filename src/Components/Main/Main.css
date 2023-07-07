@@ -58,6 +58,14 @@
     transition: 1s ease;
     margin-right: 30px;
 }
+.card button a {
+    color: white;
+    text-decoration: none;
+}
+.card button a:hover {
+    color: green;
+    text-decoration: none;
+}
 .card button:hover {
     border-radius: 0 40% 0 40%;
     background: none;

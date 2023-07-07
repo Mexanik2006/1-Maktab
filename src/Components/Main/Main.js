@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Main.css"
-import { Maincard } from "./static_data"
+import { Maincard } from "../../data/static_data"
+import { Link } from 'react-router-dom'
 
 function Main() {
     return (
@@ -19,8 +20,13 @@ function Main() {
                                 <p>{`Bu web saytdan foydalanish uchun quyidagi ${cards.name} dan ro'yhatdan o'ting.`}</p>
                             </div>
                             <div className="buttonsmain">
-                                <button className='btn'>{cards.kirish}</button>
-                                <button>{cards.button}</button>
+                                <Link to={cards.kirishlog}>
+                                    <button>{cards.kirish}</button>
+                                </Link>
+                                <Link to={cards.register}>
+                                    <button>{cards.button}</button>
+                                </Link>
+
                             </div>
                         </div>
                     ))
