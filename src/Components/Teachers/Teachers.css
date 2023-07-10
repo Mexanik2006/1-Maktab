@@ -1,0 +1,40 @@
+.teachers {
+    width: 1240px;
+    /* border: 1px solid red; */
+    height: auto;
+    margin: auto;
+    background: #0273b2;
+    height: 45px;
+    margin-top: 50px;
+    border-radius: 5px 5px 0 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    /* width: 50%; */
+    /* border: 1px solid red; */
+    /* justify-content: space-between; */
+}
+.linksheader {
+    /* border: 1px solid red; */
+}
+.topheader {
+    /* border: 1px solid red; */
+    padding: 0 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+.topheader h3 {
+    cursor: pointer;
+}
+/* .linksheader:hover .buttomheader {
+    display: block;
+    color: white;
+} */
+.buttomheader {
+    display: none;
+}

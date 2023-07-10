@@ -13,10 +13,14 @@ function Signup() {
         // console.log(login)
         // console.log(password)
         // console.log(passwordl)
-        // console.log(select)
+        console.log(select)
 
+        if (password === passwordl) {
+            window.alert("Ishladi")
+        } else {
+            window.alert("ishlamadi")
+        }
         await axios.post("http://localhost:1000/user/create", {
-            select,
             login,
             password,
             passwordl
@@ -37,7 +41,7 @@ function Signup() {
                     <input type="text" required placeholder='Enter your login' />
                     <input type="password" required placeholder='Parolingizni kiriting' />
                     <input type="password" required placeholder='Parolingizni qaytatdan kiriting' />
-                    <button>Jo`natish</button>
+                    <button onClick={sendlog}>Jo`natish</button>
                     <Link to={"/"}>Ortga qaytish</Link>
                 </form>
             </div>
