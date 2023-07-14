@@ -1,6 +1,8 @@
 import Teacher from "../Image/teachers.png";
 import student from "../Image/students.png"
 import parents from "../Image/parents.png"
+
+
 export const Maincard = [
     {
         id: 1,
@@ -29,4 +31,13 @@ export const Maincard = [
         register: "/registratsiya",
         kirishlog: "/kirish"
     },
+]
+
+export const UserTeacher = [
+    {
+        id: 1,
+        title: "Ish stoli",
+        router: "/ish"
+    }
+
 ]

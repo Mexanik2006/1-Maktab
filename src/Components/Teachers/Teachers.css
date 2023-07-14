@@ -15,9 +15,6 @@ header {
     /* border: 1px solid red; */
     /* justify-content: space-between; */
 }
-.linksheader {
-    /* border: 1px solid red; */
-}
 .topheader {
     /* border: 1px solid red; */
     padding: 0 20px;
@@ -37,4 +34,12 @@ header {
 } */
 .buttomheader {
     display: none;
+}
+
+.teacherbuttom {
+    border: 1px solid red;
+    width: 1240px;
+    /* height: 500px; */
+    margin: auto;
+    margin-top: 20px;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import "./Teachers.css";
 import Navbar from "../Navbar/Navbar"
 import { Link } from 'react-router-dom';
+import { UserTeacher } from '../../data/static_data';
 
 function Teachers() {
     return (<>
@@ -55,6 +56,17 @@ function Teachers() {
                     </div>
                 </div>
             </header>
+        </div>
+
+
+        <div className="teacherbuttom">
+            <ul>
+                {
+                    UserTeacher.map(teacher => (
+                        <li><a href={teacher.router}>{teacher.title}</a></li>
+                    ))
+                }
+            </ul>
         </div>
     </>
     )
