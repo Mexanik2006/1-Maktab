@@ -37,9 +37,31 @@ header {
 }
 
 .teacherbuttom {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1240px;
     /* height: 500px; */
     margin: auto;
     margin-top: 20px;
+    padding-left: 10px;
+}
+.teacherbuttom ul {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.teacherbuttom li {
+    /* border: 1px solid red; */
+    list-style: none;
+    font-size: 16px;
+}
+.teacherbuttom li a {
+    font-size: 18px;
+    color: #161616;
+    text-decoration: none;
+    transition: all 5s;
+}
+.teacherbuttom li a:hover {
+    color: black;
+    border-bottom: 2px solid #161616;
 }

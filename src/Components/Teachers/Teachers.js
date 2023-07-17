@@ -63,7 +63,9 @@ function Teachers() {
             <ul>
                 {
                     UserTeacher.map(teacher => (
-                        <li><a href={teacher.router}>{teacher.title}</a></li>
+                        <li>
+                            <a href={teacher.router}>{teacher.title}</a>
+                        </li>
                     ))
                 }
             </ul>

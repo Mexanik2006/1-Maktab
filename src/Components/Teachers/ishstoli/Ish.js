@@ -1,6 +1,7 @@
 import React from 'react'
 import Teachers from '../Teachers'
 import "./Ish.css"
+import { Roboto } from '../../../data/static_data'
 
 function Ish() {
     return (
@@ -9,7 +10,16 @@ function Ish() {
                 <Teachers />
             </div>
             <div className="robota">
-                <h1>Hello</h1>
+                <div className="ishmap">
+                    {
+                        Roboto.map(ish => (
+                            <a href={ish.route} title={ish.title}>
+                                <span>{ish.Icon}</span>
+                                <span>{ish.title}</span>
+                            </a>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )
