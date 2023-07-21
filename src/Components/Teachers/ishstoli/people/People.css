@@ -1,0 +1,133 @@
+.serchPeople {
+    /* border: 1px solid red; */
+    width: 1240px;
+    margin: auto;
+    margin-top: 20px;
+}
+.peopleTitle h3 {
+    color: rgb(175, 105, 161);
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    font-weight: normal;
+    width: 1240px;
+    margin: auto;
+    padding-top: 20px;
+}
+.poepleBtns {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dce3e7;
+    /* padding-bottom: 20px; */
+    font-size: 1em;
+    font: 62.5% arial, helvetica, sans-serif;
+}
+.poepleBtns button {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: none;
+    background: #f1fafd;
+    border: 1px solid #dce3e7;
+    padding: 0;
+    margin: 0;
+    padding: 0 12px;
+    height: 24px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    opacity: 1;
+}
+.poepleBtns button:focus {
+    background-color: #ffe7cf;
+    color: #ee8601;
+}
+.poepleBtns button a {
+    text-decoration: none;
+    color: #5d91c4;
+}
+.poepleBtns button a:focus {
+    background-color: #fff8f1;
+    color: #ee8601;
+}
+
+.peopleUsers {
+    padding-top: 20px;
+    display: flex;
+    margin-bottom: 200px;
+    /* border: 1px solid red; */
+}
+.findusers {
+    background: #f4f8fe;
+    border: 1px solid #dbe2e6;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    font: 62.5% arial, helvetica, sans-serif;
+}
+.findusers button {
+    padding: 0;
+    margin: 0;
+    color: #2291be;
+    background: none;
+    border: none;
+    font-size: 1.7em;
+    border-radius: 0;
+    margin-bottom: 7px;
+    padding: 2px 4px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.findusers button:focus {
+    background: #32a1ce;
+    color: #fff;
+}
+.peopleleft {
+    margin-left: 20px;
+}
+
+.searchusers {
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.searchusers form {
+    border: 1px solid #dbe2e6;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    background: #f4f8fe;
+}
+.searchflex {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red;    */
+    width: 80%;
+}
+.searchflex p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.searchflex span {
+    margin-left: 5px;
+}
+.searchflex input {
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    height: 30px;
+    width: 110%;
+}
+.searchflex button {
+    background: #76b9ea;
+    border: 1px solid #76b9ea;
+    height: 30px;
+    color: #fff;
+    border-radius: 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.searchflex button:hover {
+    color: white;
+    background: #f19720;
+}

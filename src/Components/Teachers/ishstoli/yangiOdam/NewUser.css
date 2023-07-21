@@ -1,0 +1,101 @@
+.newUsers {
+    width: 1240px;
+    /* border: 1px solid red; */
+    margin: 20px auto;
+    margin-bottom: 200px;
+    padding: 0;
+}
+
+.newUsers h3 {
+    color: rgb(175, 105, 161);
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    font-weight: normal;
+    width: 1240px;
+    margin: auto;
+    padding-top: 20px;
+}
+.newuserflex {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    border: 1px solid #dee4e8;
+    background: #f4f8fe;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+.newUserleft {
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.newUserright {
+    /* border: 1px solid red; */
+    padding: 0;
+    width: 100%;
+}
+.newuserxodim {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 0;
+}
+.newuserxodim p input {
+    padding: 0;
+    margin: 6px 0;
+}
+.inputtop {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.inputtop input {
+    padding: 0;
+    margin-bottom: 10px;
+}
+.newssss {
+    /* border: 1px solid red; */
+    /* height: 100%; */
+    width: 100%;
+}
+.ddddd {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 100%;
+}
+.ddddd h4 {
+    margin-top: 4px;
+}
+.ddddd input {
+    height: 30px;
+}
+
+.ssaa {
+    display: flex;
+}
+.inputradio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    /* border: 1px solid red; */
+    height: 30px;
+}
+.inputradio input {
+    margin-top: 18px;
+    margin-right: 5px;
+}
+.newuserBtn button {
+    padding: 7px 35px;
+    margin: 0;
+    border: none;
+    background: #76b9ea;
+    color: white;
+}
+.newuserBtn button:hover {
+    background: #f19720;
+}

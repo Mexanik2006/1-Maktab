@@ -77,17 +77,19 @@ export const Roboto = [
         id: 2,
         Icon: <BiSolidUserBadge />,
         title: "Odamlar ro'yxati",
-        route: "/people"
+        route: "/people/hozir"
     },
     {
         id: 3,
         Icon: <ImUserPlus />,
-        title: "Yangi shaxs"
+        title: "Yangi shaxs",
+        route: "/newuser"
     },
     {
         id: 4,
         Icon: <HiAcademicCap />,
-        title: "Sinflar"
+        title: "Sinflar",
+        route: "/sinflar"
     },
 ]
 
@@ -138,4 +140,11 @@ export const editbottom = [
         link7: "Lokalizatsiya",
         link8: "Namunaviy ishlar vazni",
     },
+]
+
+export const searchPeople = [
+    {
+        id: 1,
+        title: "Odamlarni izlash"
+    }
 ]

@@ -7,6 +7,10 @@ import Teachers from './Components/Teachers/Teachers';
 import Ish from './Components/Teachers/ishstoli/Ish';
 import Boshqaruv from './Components/Teachers/ishstoli/boshqaruv/Boshqaruv';
 import People from './Components/Teachers/ishstoli/people/People';
+import Sinflar from './Components/Teachers/ishstoli/sinf/Sinflar';
+import NewUser from './Components/Teachers/ishstoli/yangiOdam/NewUser';
+import Child from './Components/Teachers/ishstoli/people/child/Child';
+import Arxiv from './Components/Teachers/ishstoli/people/arxiv/Arxiv';
 
 function Routers() {
     return (
@@ -18,7 +22,12 @@ function Routers() {
                 <Route path='/class' element={<Teachers />} />
                 <Route path='/ish' element={<Ish />} />
                 <Route path='/boshqaruv' element={<Boshqaruv />} />
-                <Route path='/people' element={<People />} />
+                <Route path='/people' element={<People />} >
+                    <Route path='hozir' element={<Child />} />
+                    <Route path='arxiv' element={<Arxiv />} />
+                </Route>
+                <Route path='/newuser' element={<NewUser />} />
+                <Route path='/sinflar' element={<Sinflar />} />
             </Routes>
         </div>
     )
