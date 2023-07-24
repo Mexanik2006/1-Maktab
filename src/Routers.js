@@ -11,6 +11,8 @@ import Sinflar from './Components/Teachers/ishstoli/sinf/Sinflar';
 import NewUser from './Components/Teachers/ishstoli/yangiOdam/NewUser';
 import Child from './Components/Teachers/ishstoli/people/child/Child';
 import Arxiv from './Components/Teachers/ishstoli/people/arxiv/Arxiv';
+import Myschool from "./Components/Teachers/myschool/Myschool"
+import Odamlar from './Components/Teachers/myschool/teacher/Odamlar';
 
 function Routers() {
     return (
@@ -28,6 +30,10 @@ function Routers() {
                 </Route>
                 <Route path='/newuser' element={<NewUser />} />
                 <Route path='/sinflar' element={<Sinflar />} />
+
+                <Route path='/meningmaktabim' element={<Myschool />}>
+                    <Route path='o`qituvchilar' element={<Odamlar />} />
+                </Route>
             </Routes>
         </div>
     )

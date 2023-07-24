@@ -65,3 +65,12 @@ header {
     color: black;
     border-bottom: 2px solid #161616;
 }
+@media screen and (max-width: 400px) {
+    .teachers {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    .teacherbuttom {
+        width: 100%;
+    }
+}

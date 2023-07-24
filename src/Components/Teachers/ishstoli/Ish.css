@@ -44,3 +44,9 @@
 .ishmap a span:nth-child(1) {
     color: #6c8599;
 }
+@media (max-width: 400px) {
+    .robota {
+        border: 1px solid red;
+        width: 100%;
+    }
+}

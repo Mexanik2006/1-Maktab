@@ -46,7 +46,7 @@ export const UserTeacher = [
     {
         id: 2,
         title: "Mening maktabim",
-        router: "/ish"
+        router: "/meningmaktabim"
     },
     {
         id: 3,
