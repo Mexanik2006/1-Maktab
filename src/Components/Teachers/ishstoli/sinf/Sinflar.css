@@ -1,0 +1,79 @@
+.sinflar_1 {
+    width: 1240px;
+    margin: auto;
+}
+.sinflar {
+    background-color: white;
+    /* margin: 50px; */
+    /* width: 80%; */
+    /* height: 35%; */
+}
+.sinflar h1 {
+    padding: 20px;
+}
+.sinflar h1 > a {
+    text-decoration: none;
+}
+.SinfBtn span {
+    font-size: 30px;
+}
+.year_23 {
+    gap: 5px;
+    padding: 20px 20px;
+    display: flex;
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+}
+.SinfBtn {
+    display: flex;
+}
+.SinfBtn h2 {
+    font-size: 25px;
+}
+.btn_1 {
+    display: flex;
+    justify-content: start;
+}
+.btn_1 button {
+    background: blue;
+    color: white;
+    border: none;
+    width: 30%;
+}
+.royhat {
+    display: flex;
+    padding-left: 20px;
+    gap: 10px;
+    /* border: 1px solid red;    */
+    margin-bottom: 7px;
+}
+.royhat button {
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 0 10px;
+    height: 26px;
+}
+.royhat button:nth-child(1) {
+    background: blue;
+    color: white;
+}
+.tartib_1 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: rgb(181, 177, 177);
+}
+.ichkari {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ichkari span {
+    padding-right: 20px;
+    font-size: 35px;
+    font-weight: 900;
+}
+.ichkari span > a {
+    text-decoration: none;
+}

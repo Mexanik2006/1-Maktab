@@ -13,6 +13,7 @@ import Child from './Components/Teachers/ishstoli/people/child/Child';
 import Arxiv from './Components/Teachers/ishstoli/people/arxiv/Arxiv';
 import Myschool from "./Components/Teachers/myschool/Myschool"
 import Odamlar from './Components/Teachers/myschool/teacher/Odamlar';
+import Yaratish from './Components/Teachers/ishstoli/yaratish/Yaratish';
 
 function Routers() {
     return (
@@ -34,6 +35,9 @@ function Routers() {
                 <Route path='/meningmaktabim' element={<Myschool />}>
                     <Route path='o`qituvchilar' element={<Odamlar />} />
                 </Route>
+                <Route path='/people' element={<People />} />
+                <Route path='/sinflar' element={<Sinflar />} />
+                <Route path='/yaratish' element={<Yaratish />} />
             </Routes>
         </div>
     )

@@ -5,6 +5,36 @@ import { AiTwotoneTool } from "react-icons/ai";
 import { ImUserPlus } from "react-icons/im";
 import { BiSolidUserBadge } from "react-icons/bi";
 import { HiAcademicCap } from "react-icons/hi"
+import { LuChevronLeftSquare } from "react-icons/lu"
+import { LuChevronRightSquare } from "react-icons/lu"
+
+export const Buttonsinf = [
+    {
+        id: 1,
+        Icon: <LuChevronLeftSquare />,
+    },
+    {
+        id: 2,
+        Icon: < LuChevronRightSquare />,
+    },
+    {
+        id: 3,
+        btn: "Joriy yili",
+        year: "2022/2023",
+        text: "o`quv yili"
+    }
+]
+
+export const Buttonroyhat = [
+    {
+        id: 1,
+        btn: "Sinflar royhati",
+        btn1: "Otkazish",
+        btn2: "Chiqarish",
+        btn3: "Arxivlash"
+    },
+]
+
 
 
 export const Maincard = [
