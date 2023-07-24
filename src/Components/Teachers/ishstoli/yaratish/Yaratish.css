@@ -1,0 +1,33 @@
+.yaratish{
+    padding-left: 18%;
+}
+.h1_uchun{
+    width: 600px;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+.h1_uchun a{
+    text-decoration: none;
+}
+.yaratish_tartib{
+    width: 770px;
+    border-radius: 20px;
+    height: 570px;
+    padding-left: 2%;
+    border: 2px solid rgb(118, 117, 117);
+    background-color: rgb(220, 239, 244);
+}
+.h3_1{
+    display: flex;
+    align-items: center;
+}
+.h3_1 h3{
+    width: 500px;
+    margin-top: 20px;
+}
+.kodi input{
+    margin-top: 28px;
+}
+.kodi select{
+    margin-top: 20px;
+}

@@ -1,0 +1,78 @@
+.sinflar_1{
+    background-color: rgb(238, 232, 246);
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.sinflar{
+    background-color: white;
+    margin: 50px;
+    width: 80%;
+    height: 35%;
+}
+.sinflar h1{
+    padding: 20px;
+}
+.sinflar h1>a{
+    text-decoration: none;
+}
+.SinfBtn span{
+    font-size: 30px;
+}
+.year_23{
+    gap: 20px;
+    padding: 20px 20px;
+    display: flex;
+}
+.SinfBtn{
+    display: flex;
+}
+.SinfBtn h2{
+    font-size: 25px;
+}
+.btn_1{
+    display: flex;
+    justify-content: start;
+}
+.btn_1 button{
+    background: blue;
+    color: white;
+    border: none;
+    width: 30%;
+}
+.royhat{
+    display: flex;
+    padding-left: 20px;
+    gap: 10px;
+}
+.royhat button{
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 20px;
+}
+.royhat button:nth-child(1) {
+    background: blue;
+    color: white;
+}
+.tartib_1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: rgb(181, 177, 177);
+}
+.ichkari{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ichkari span{
+    padding-right: 20px;
+    font-size: 35px;
+    font-weight: 900;
+}
+.ichkari span>a{
+    text-decoration: none;
+}
