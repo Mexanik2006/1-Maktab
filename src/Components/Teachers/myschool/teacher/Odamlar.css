@@ -1,0 +1,42 @@
+.odamlar {
+    border: 1px solid red;
+    padding: 10px;
+}
+.odamlarbgcolor {
+    padding: 10px;
+    border: 1px solid #dbe2e6;
+    background: #f4f8fe;
+    border-radius: 10px;
+    width: 40%;
+}
+.ogamlaruserflex {
+    display: flex;
+    margin-top: 10px;
+}
+.odmalarimage {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #aecaf2;
+    margin-right: 15px;
+}
+.nameodamlar {
+    display: flex;
+    flex-direction: column;
+}
+.nameodamlar a {
+    text-decoration: none;
+    color: #8caf6a;
+}
+.nameodamlar a:hover {
+    color: #f6a01d;
+}
+.nameodamlar a span {
+    /* color: #8caf6a; */
+    font-size: 62.5% arial, helvetica, sans-serif;
+    font-size: 1.1em;
+    margin: 0 2px;
+}
+.nameodamlar span:nth-child(4) {
+    color: #999;
+    font-size: 1em;
+}
