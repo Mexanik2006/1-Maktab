@@ -112,7 +112,7 @@ export const Roboto = [
     {
         id: 3,
         Icon: <ImUserPlus />,
-        title: "Yangi shaxs"
+        title: "Yangi shaxs",
     },
     {
         id: 4,

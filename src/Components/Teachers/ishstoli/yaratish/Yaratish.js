@@ -54,7 +54,7 @@ function Yaratish() {
 
           <div className="h3_1">
             <h3>Parallel</h3>
-            <div className="kodi">
+            <div className="kodi2">
               <select name="" id="">
                 <option value=""></option>
               </select>
@@ -89,6 +89,7 @@ function Yaratish() {
 
         </div>
       </div>
+      <a href="/sinflar">ortga</a>
     </div>
   )
 }
