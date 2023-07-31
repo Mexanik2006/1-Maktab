@@ -34,9 +34,9 @@ function Routers() {
 
                 <Route path='/meningmaktabim' element={<Myschool />}>
                     <Route path='o`qituvchilar' element={<Odamlar />} />
+                    <Route path='sinflar' element={<Sinflar />} />
                 </Route>
                 <Route path='/people' element={<People />} />
-                <Route path='/sinflar' element={<Sinflar />} />
                 <Route path='/yaratish' element={<Yaratish />} />
             </Routes>
         </div>

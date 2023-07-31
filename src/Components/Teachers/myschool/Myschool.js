@@ -19,7 +19,7 @@ function Myschool() {
                     </div>
                     <div className="cards">
                         <button>
-                            <Link>Sinflar</Link>
+                            <Link to={"/meningmaktabim/sinflar"}>Sinflar</Link>
                         </button>
                     </div>
                     <div className="cards">

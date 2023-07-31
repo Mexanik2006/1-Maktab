@@ -1,6 +1,7 @@
 .sinflar_1 {
     width: 1240px;
     margin: auto;
+    margin-bottom: 200px;
 }
 .sinflar {
     background-color: white;
@@ -76,4 +77,10 @@
 }
 .ichkari span > a {
     text-decoration: none;
+}
+.classmap {
+    border: 1px solid red;
+    width: 1240px;
+    margin: auto;
+    padding-left: 60px;
 }

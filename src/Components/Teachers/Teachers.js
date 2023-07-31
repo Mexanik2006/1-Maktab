@@ -62,8 +62,8 @@ function Teachers() {
         <div className="teacherbuttom">
             <ul>
                 {
-                    UserTeacher.map(teacher => (
-                        <li>
+                    UserTeacher.map((teacher, index) => (
+                        <li key={index}>
                             <a href={teacher.router}>{teacher.title}</a>
                         </li>
                     ))

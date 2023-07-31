@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Sinflar.css"
 import Ish from "../Ish"
-import { Buttonroyhat, Buttonsinf, Sinftartib } from '../../../../data/static_data'
+import { Buttonroyhat, Buttonsinf } from '../../../../data/static_data';
+import axios from "../../../../api/Api"
+import { Link } from 'react-router-dom';
 function Sinflar() {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    const getApi = async () => {
+      await axios.get("/sinf/get")
+        .then(res => setData(res.data))
+        .catch(err => console.log(err))
+    }
+    getApi()
+
+  }, [])
   return (
     <div className="">
       <div className="">
@@ -60,6 +72,16 @@ function Sinflar() {
               <h1>10</h1>
               <h1>11</h1>
             </div>
+          </div>
+
+          <div className="classmap">
+            {
+              data.map((classs, index) => (
+                <div className="" key={index}>
+                  <Link>{classs.classcode}</Link>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>

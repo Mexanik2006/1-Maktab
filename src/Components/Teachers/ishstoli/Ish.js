@@ -12,8 +12,8 @@ function Ish() {
             <div className="robota">
                 <div className="ishmap">
                     {
-                        Roboto.map(ish => (
-                            <a href={ish.route} title={ish.title}>
+                        Roboto.map((ish, index) => (
+                            <a key={index} href={ish.route} title={ish.title}>
                                 <span>{ish.Icon}</span>
                                 <span>{ish.title}</span>
                             </a>

@@ -131,3 +131,75 @@
     color: white;
     background: #f19720;
 }
+
+.mapuserchild {
+    /* border: 1px solid red; */
+    margin-top: -350px;
+    width: 82%;
+    margin-left: 240px;
+    margin-bottom: 200px;
+}
+.mapuserchildtop {
+    /* border: 1px solid red; */
+    margin-bottom: 15px;
+    color: #999;
+    font-size: 1em;
+}
+.mapuserchildtitle {
+    /* border: 1px solid red; */
+    border-bottom: 2px solid #66666666;
+    display: flex;
+    /* justify-content: ; */
+    color: #666666;
+    margin-bottom: 10px;
+}
+.mapuserchildtitle span {
+    margin-left: 20px;
+}
+.mapuserchildtitle span:nth-child(2) {
+    margin-left: 600px;
+}
+.mapuserchildmap .df {
+    display: flex;
+    /* justify-content: space-around; */
+    /* border: 1px solid red; */
+    margin-left: 20px;
+    border-bottom: 1px solid #dddddd;
+    padding: 6px 0px;
+    align-items: center;
+}
+.mapuserchildmap .df:hover {
+    background: #ffeaaa;
+    cursor: pointer;
+}
+.mapuserchildmap .link {
+    /* border: 1px solid red; */
+    font-size: 1.1em;
+    width: 600px;
+}
+.mapuserchildmap .link a {
+    color: #8caf31;
+    font-weight: bold;
+    text-decoration: none;
+}
+.mapuserchildmap .link a span {
+    margin-right: 7px;
+}
+.mapuserchildmap .gender {
+    /* border: 1px solid red; */
+    margin-left: 35px;
+    color: #666666;
+    width: 300px;
+}
+.mapuserchildmap .button a {
+    cursor: pointer;
+    padding: 2px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.mapuserchildmap .button a:hover {
+    color: #ee8601;
+    border: 1px solid green;
+}
