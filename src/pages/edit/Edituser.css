@@ -1,0 +1,10 @@
+.editform {
+    padding: 10px;
+}
+.edituserflex {
+    display: flex;
+}
+.edituserflex h4 {
+    width: 200px;
+    border: 1px solid red;
+}

@@ -15,6 +15,7 @@ function Child() {
         getApi()
 
     }, [])
+    console.log(data)
     return (
         <div className="">
             <div className="peopleUsers">
@@ -68,7 +69,7 @@ function Child() {
                         data.map((users, index) => (
                             <div className="df" key={index}>
                                 <div className="link">
-                                    <Link>
+                                    <Link to={`/updateuser/${users._id}`}>
                                         <span>{users.lastname}</span>
                                         <span>{users.name}</span>
                                         <span>{users.parentname}</span>
@@ -80,7 +81,7 @@ function Child() {
                                 </div>
 
                                 <div className="button">
-                                    <Link><GrEdit /></Link>
+                                    <Link to={`/updateuser/${users._id}`}><GrEdit /></Link>
                                 </div>
                             </div>
                         ))

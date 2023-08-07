@@ -1,0 +1,24 @@
+.updateusermain {
+    /* border: 1px solid red; */
+    width: 1240px;
+    margin: 20px auto;
+    height: 500px;
+}
+.updatebuttom {
+    border: 1px solid black;
+    margin-top: 20px;
+    height: 100%;
+}
+.updatetoptitle {
+    margin-left: 15px;
+}
+.updatetoptitle h2 {
+    color: #af69a1;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.updatetoptitle p {
+    color: #999;
+    font-size: 1em;
+    margin: 5px 0;
+}

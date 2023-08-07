@@ -79,7 +79,7 @@
     text-decoration: none;
 }
 .classmap {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1240px;
     margin: auto;
     padding-left: 60px;

@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./NewUser.css";
 import Ish from "../Ish"
 import axios from "../../../../api/Api"
+import { UserContext } from '../../../../context/UserContext';
+// import LoadingSpinner from '../../../loadingspinner/LoaderSpinner';
+import Loader from '../../../../pages/loader/Loader';
 function NewUser() {
     const [schoolgen, setSchoolgen] = useState("")
     const [date, setDate] = useState("")
@@ -12,10 +15,14 @@ function NewUser() {
     const [gender, setGender] = useState("")
     const [parentphone, setParentphone] = useState(null)
     const [youphone, setYouphone] = useState(null)
+    const [age, setAge] = useState(null)
+    const [email, setEmail] = useState("")
+    const [homephone, setHomephone] = useState(null)
     // console.log(schoolgen)
     // console.log(date)
     // console.log(lastname)
     // console.log(parentname)
+    const { isLoading, setIsLoading } = useContext(UserContext)
     // console.log(birthday)
     // console.log(gender)
     // console.log(parentphone)
@@ -23,25 +30,39 @@ function NewUser() {
 
     const createUser = async (e) => {
         e.preventDefault()
+        setIsLoading(true)
         let newUser = {
             schoolgen,
             date,
             lastname,
             name,
             parentname,
+            age: Number(age),
+            email,
             birthday,
             gender,
             parentphone: Number(parentphone),
-            youphone: Number(youphone)
+            youphone: Number(youphone),
+            homephone: Number(homephone)
         }
 
         console.log(newUser)
         await axios.post("/users/create", newUser)
-            .then(res => console.log("Muvafaqqiyatli joylandi"))
-            .catch(err => console.log(err))
+            .then(res => {
+                setIsLoading(false)
+                console.log("Muvafaqqiyatli joylandi")
+            }
+
+            )
+            .catch(err => {
+                setIsLoading(false)
+
+                console.log(err)
+            })
     }
     return (
         <div className='newUser'>
+            <Loader boolean={isLoading} />
             <div className="">
                 <Ish />
             </div>
@@ -95,6 +116,10 @@ function NewUser() {
                                 <input type="date" required onChange={(e) => setBirthday(e.target.value)} />
                             </div>
                             <div className="ddddd">
+                                <h4>Yoshi</h4>
+                                <input type="number" required onChange={(e) => setAge(e.target.value)} />
+                            </div>
+                            <div className="ddddd">
                                 <h4>Jinsi</h4>
                                 <div className="ssaa" onChange={(e) => setGender(e.target.value)}>
                                     <div className="inputradio">
@@ -116,7 +141,7 @@ function NewUser() {
                             </div>
                             <div className="ddddd">
                                 <h4>Uyali telefon raqami</h4>
-                                <input type="number" placeholder='Uyali telefon raqami...' />
+                                <input type="number" placeholder='Uyali telefon raqami...' onChange={(e) => setHomephone(e.target.value)} />
                             </div>
                             <div className="ddddd">
                                 <h4>Uzini telefon raqami</h4>
@@ -124,7 +149,7 @@ function NewUser() {
                             </div>
                             <div className="ddddd">
                                 <h4>Email</h4>
-                                <input type="email" placeholder='Email' />
+                                <input type="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
                             </div>
                         </div>
                     </div>

@@ -14,6 +14,10 @@ import Arxiv from './Components/Teachers/ishstoli/people/arxiv/Arxiv';
 import Myschool from "./Components/Teachers/myschool/Myschool"
 import Odamlar from './Components/Teachers/myschool/teacher/Odamlar';
 import Yaratish from './Components/Teachers/ishstoli/yaratish/Yaratish';
+import Updateuser from './pages/updateuser/Updateuser';
+import Showdata from './pages/updateuser/show/Showdata';
+import Edituser from './pages/edit/Edituser';
+import Loader from './pages/loader/Loader';
 
 function Routers() {
     return (
@@ -38,6 +42,12 @@ function Routers() {
                 </Route>
                 <Route path='/people' element={<People />} />
                 <Route path='/yaratish' element={<Yaratish />} />
+
+                <Route path='/updateuser/:id' element={<Updateuser />}>
+                    <Route path='show' element={<Showdata />} />
+                    <Route path='edit' element={<Edituser />} />
+                </Route>
+                <Route path='/lod' element={<Loader />} />
             </Routes>
         </div>
     )
