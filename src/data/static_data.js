@@ -71,12 +71,12 @@ export const UserTeacher = [
     {
         id: 1,
         title: "Ish stoli",
-        router: "/ish"
+        router: "/class/ish"
     },
     {
         id: 2,
         title: "Mening maktabim",
-        router: "/meningmaktabim"
+        router: "/class/meningmaktabim"
     },
     {
         id: 3,
@@ -101,25 +101,25 @@ export const Roboto = [
         id: 1,
         Icon: <AiTwotoneTool />,
         title: "Boshqaruv",
-        route: "/boshqaruv"
+        route: "/class/ish/boshqaruv"
     },
     {
         id: 2,
         Icon: <BiSolidUserBadge />,
         title: "Odamlar ro'yxati",
-        route: "/people/hozir"
+        route: "/class/ish/people/hozir"
     },
     {
         id: 3,
         Icon: <ImUserPlus />,
         title: "Yangi shaxs",
-        route: "/newuser"
+        route: "/class/ish/newuser"
     },
     {
         id: 4,
         Icon: <HiAcademicCap />,
         title: "Sinflar",
-        route: "/sinflar"
+        route: "/class/ish/sinflar"
     },
 ]
 
@@ -128,7 +128,9 @@ export const edit = [
         id: 1,
         title: "Odamlar",
         link: "Odamalr ro'yxati",
+        routelink: "/class/ish/people/hozir",
         linkone: "Yangi odam",
+        routelinkone: "/class/ish/newuser",
         link2: "Ko‘chirib o‘tkazish",
         link3: "Taklifnomalar",
         link4: "Buyruqlar"
@@ -137,7 +139,9 @@ export const edit = [
         id: 2,
         title: "Sinflar",
         class: "Sinflar ro‘yxati",
-        class2: "Yangi sinf"
+        routeclass: "/class/ish/sinflar",
+        class2: "Yangi sinf",
+        routeclass2: "/yaratish"
     },
 ]
 

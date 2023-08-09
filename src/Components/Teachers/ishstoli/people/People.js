@@ -7,9 +7,9 @@ import { Link, Outlet } from 'react-router-dom'
 function People() {
     return (
         <div>
-            <div className="">
+            {/* <div className="">
                 <Ish />
-            </div>
+            </div> */}
             <div className="serchPeople">
                 <div className="peopleTop">
                     {

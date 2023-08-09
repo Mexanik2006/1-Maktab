@@ -67,7 +67,7 @@ function Showdata() {
                         </table>
                     </div>
                     <div className="">
-                        <Link to={`/updateuser/${paramId}/edit`}>Taxrirlash</Link>
+                        <Link to={`/class/ish/updateuser/${paramId}/edit`}>Taxrirlash</Link>
                     </div>
 
                 </div>

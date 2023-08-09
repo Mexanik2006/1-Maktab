@@ -6,20 +6,20 @@ import { Link, Outlet } from 'react-router-dom';
 function Myschool() {
     return (
         <div>
-            <div className="">
+            {/* <div className="">
                 <Teachers />
-            </div>
+            </div> */}
 
             <div className="schooltop">
                 <div className="poepleBtns">
                     <div className="cards">
                         <button>
-                            <Link to={"/meningmaktabim/o`qituvchilar"}>O'qituvchilar</Link>
+                            <Link to={"/class/meningmaktabim/o`qituvchilar"}>O'qituvchilar</Link>
                         </button>
                     </div>
                     <div className="cards">
                         <button>
-                            <Link to={"/meningmaktabim/sinflar"}>Sinflar</Link>
+                            <Link to={"/class/meningmaktabim/sinflar"}>Sinflar</Link>
                         </button>
                     </div>
                     <div className="cards">

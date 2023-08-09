@@ -26,27 +26,31 @@ function Routers() {
                 <Route path='/' element={<App />} />
                 <Route path='/registratsiya' element={<Signup />} />
                 <Route path='/kirish' element={<Signin />} />
-                <Route path='/class' element={<Teachers />} />
-                <Route path='/ish' element={<Ish />} />
-                <Route path='/boshqaruv' element={<Boshqaruv />} />
-                <Route path='/people' element={<People />} >
-                    <Route path='hozir' element={<Child />} />
-                    <Route path='arxiv' element={<Arxiv />} />
+                <Route path='/class' element={<Teachers />} >
+                    <Route path='ish' element={<Ish />} >
+                        <Route path='boshqaruv' element={<Boshqaruv />} />
+                        <Route path='people' element={<People />} >
+                            <Route path='hozir' element={<Child />} />
+                            <Route path='arxiv' element={<Arxiv />} />
+                        </Route>
+                        <Route path='updateuser/:id' element={<Updateuser />}>
+                            <Route path='show' element={<Showdata />} />
+                            <Route path='edit' element={<Edituser />} />
+                        </Route>
+                        <Route path='newuser' element={<NewUser />} />
+                        <Route path='sinflar' element={<Sinflar />} />
+                    </Route>
+                    <Route path='meningmaktabim' element={<Myschool />}>
+                        <Route path='o`qituvchilar' element={<Odamlar />} />
+                        <Route path='sinflar' element={<Sinflar />} />
+                    </Route>
                 </Route>
-                <Route path='/newuser' element={<NewUser />} />
-                <Route path='/sinflar' element={<Sinflar />} />
 
-                <Route path='/meningmaktabim' element={<Myschool />}>
-                    <Route path='o`qituvchilar' element={<Odamlar />} />
-                    <Route path='sinflar' element={<Sinflar />} />
-                </Route>
+
+
                 <Route path='/people' element={<People />} />
                 <Route path='/yaratish' element={<Yaratish />} />
 
-                <Route path='/updateuser/:id' element={<Updateuser />}>
-                    <Route path='show' element={<Showdata />} />
-                    <Route path='edit' element={<Edituser />} />
-                </Route>
                 <Route path='/lod' element={<Loader />} />
             </Routes>
         </div>

@@ -23,9 +23,9 @@ function Updateuser() {
 
     return (
         <div>
-            <div className="">
+            {/* <div className="">
                 <Teachers />
-            </div>
+            </div> */}
 
             <div className="updateusermain">
                 <div className="updatetoptitle">
@@ -37,12 +37,12 @@ function Updateuser() {
                     <div className="poepleBtns">
                         <div className="cards">
                             <button>
-                                <Link to={`/updateuser/${paramId}/show`}>Ko'rib chiqish</Link>
+                                <Link to={`/class/ish/updateuser/${paramId}/show`}>Ko'rib chiqish</Link>
                             </button>
                         </div>
                         <div className="cards">
                             <button>
-                                <Link to={`/updateuser/${paramId}/edit`}>Shaxsiy ma'lumotlar</Link>
+                                <Link to={`/class/ish/updateuser/${paramId}/edit`}>Shaxsiy ma'lumotlar</Link>
                             </button>
                         </div>
                         <div className="cards">

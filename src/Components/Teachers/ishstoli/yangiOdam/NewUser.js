@@ -63,9 +63,9 @@ function NewUser() {
     return (
         <div className='newUser'>
             <Loader boolean={isLoading} />
-            <div className="">
+            {/* <div className="">
                 <Ish />
-            </div>
+            </div> */}
 
 
             <div className="newUsers">

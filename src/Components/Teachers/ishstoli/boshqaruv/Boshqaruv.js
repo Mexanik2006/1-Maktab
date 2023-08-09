@@ -2,17 +2,17 @@ import React from 'react'
 import "./Boshqaruv.css"
 import Ish from '../Ish'
 import { edit, editbottom } from '../../../../data/static_data'
+import { Outlet } from 'react-router-dom'
 
 function Boshqaruv() {
     return (
         <div className='border'>
-            <div className="">
+            {/* <div className="">
                 <Ish />
-            </div>
+            </div> */}
             <div className="texth1">
                 <h1>Maktab boshqaruvi</h1>
             </div>
-
             <div className="edit">
                 {
                     edit.map(boshqaruv => (
@@ -21,10 +21,10 @@ function Boshqaruv() {
                                 <h3>{boshqaruv.title}</h3>
                                 <div className="editbuttom">
                                     <p>
-                                        <a href="">{boshqaruv.link}</a>
+                                        <a href={boshqaruv.routelink}>{boshqaruv.link}</a>
                                     </p>
                                     <p>
-                                        <a href="">{boshqaruv.linkone}</a>
+                                        <a href={boshqaruv.routelinkone}>{boshqaruv.linkone}</a>
                                     </p>
                                     <p>
                                         <a href="">{boshqaruv.link2}</a>
@@ -36,10 +36,10 @@ function Boshqaruv() {
                                         <a href="">{boshqaruv.link4}</a>
                                     </p>
                                     <p>
-                                        <a href="">{boshqaruv.class}</a>
+                                        <a href={boshqaruv.routeclass}>{boshqaruv.class}</a>
                                     </p>
                                     <p>
-                                        <a href="">{boshqaruv.class2}</a>
+                                        <a href={boshqaruv.routeclass2}>{boshqaruv.class2}</a>
                                     </p>
                                 </div>
                             </div>
@@ -86,6 +86,8 @@ function Boshqaruv() {
                     ))
                 }
             </div>
+            <Outlet />
+
         </div>
     )
 }

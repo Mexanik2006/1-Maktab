@@ -69,7 +69,7 @@ function Child() {
                         data.map((users, index) => (
                             <div className="df" key={index}>
                                 <div className="link">
-                                    <Link to={`/updateuser/${users._id}`}>
+                                    <Link to={`/class/ish/updateuser/${users._id}`}>
                                         <span>{users.lastname}</span>
                                         <span>{users.name}</span>
                                         <span>{users.parentname}</span>

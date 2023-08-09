@@ -17,9 +17,9 @@ function Sinflar() {
   }, [])
   return (
     <div className="">
-      <div className="">
+      {/* <div className="">
         <Ish />
-      </div>
+      </div> */}
 
 
       <div className='sinflar_1'>

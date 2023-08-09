@@ -2,12 +2,13 @@ import React from 'react'
 import Teachers from '../Teachers'
 import "./Ish.css"
 import { Roboto } from '../../../data/static_data'
+import { Outlet } from 'react-router-dom'
 
 function Ish() {
     return (
         <div className=''>
             <div className="">
-                <Teachers />
+                {/* <Teachers /> */}
             </div>
             <div className="robota">
                 <div className="ishmap">
@@ -20,6 +21,7 @@ function Ish() {
                         ))
                     }
                 </div>
+                <Outlet />
             </div>
         </div>
     )

@@ -72,5 +72,20 @@ header {
     }
     .teacherbuttom {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: auto;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr; */
+    }
+    .teacherbuttom li a {
+        border: 1px solid red;
+        /* display: grid; */
+        display: flex;
+        width: 100px;
+        overflow: auto;
+        /* font-size: 12px; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
     }
 }
